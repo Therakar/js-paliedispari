@@ -12,3 +12,11 @@ for (let i = userWord.length - 1; i >= 0 ; i--){
     // attribuisco alla let ""controlWord" la parola con le lettere invertite come valore 
     controlWord += userWord[i];
 }
+
+// se la parola inserita dall'utente rimane identica a quella contenuta in "controlWord" è un palindromo 
+if (userWord === controlWord){
+    alert ("palintromo");
+} else { 
+    alert("NON palindromo");
+}
+    
