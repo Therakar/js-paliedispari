@@ -9,4 +9,6 @@ let controlWord = "";
 // ciclo for tramite il quale invertirò l'ordine delle lettere
 for (let i = userWord.length - 1; i >= 0 ; i--){
 
+    // attribuisco alla let ""controlWord" la parola con le lettere invertite come valore 
+    controlWord += userWord[i];
 }
