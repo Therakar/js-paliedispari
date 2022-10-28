@@ -1,8 +1,6 @@
 "use strict"
 
-// richiesta dell'input dell'utente
-const userWord = prompt ("Inserisci la tua parola per vedere se è un palindromo:");
-
+function isPal (userWord){
 // let che conterrà la parola con l'ordine delle lettere invertito
 let controlWord = "";
 
@@ -10,13 +8,17 @@ let controlWord = "";
 for (let i = userWord.length - 1; i >= 0 ; i--){
 
     // attribuisco alla let ""controlWord" la parola con le lettere invertite come valore 
-    controlWord += userWord[i];
+   controlWord += userWord[i];
 }
 
 // se la parola inserita dall'utente rimane identica a quella contenuta in "controlWord" è un palindromo 
 if (userWord === controlWord){
-    alert ("palintromo");
+    return true;
 } else { 
-    alert("NON palindromo");
+    return false;
 }
-    
+}
+
+console.log(isPal(""));
+
+
