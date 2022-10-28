@@ -11,14 +11,22 @@ for (let i = userWord.length - 1; i >= 0 ; i--){
    controlWord += userWord[i];
 }
 
-// se la parola inserita dall'utente rimane identica a quella contenuta in "controlWord" è un palindromo 
+// se la parola inserita dall'utente rimane identica a quella contenuta in "controlWord" restituisce true ...
 if (userWord === controlWord){
     return true;
-} else { 
+} else { //... altrimenti restituisce false 
     return false;
 }
 }
 
-console.log(isPal(""));
+// console.log(isPal(""));
 
+// richiesta dell'input dell'utente
+const userWord = prompt ("Inserisci la tua parola per vedere se è un palindromo:");
 
+// ciclo
+if (isPal(userWord) === true){
+    alert ("PALINDROMO");
+} else{
+    alert ("NON PALINDROMO");
+}
